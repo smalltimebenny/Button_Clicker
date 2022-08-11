@@ -4,10 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Dojonary</title>
 </head>
 <body>
-    <button onclick="change(this)">Login</button>
+    <div class="header">
+        <p id="title">Dojonary</p>
+        <input class="searchBox" type="search" placeholder="Search">
+        <button class="logButton" onclick="change(this)">Login</button>
+    </div>
+    <div class="subheader">
+        <div class="main">
+            <div class="entryContainer">
+                <div class="entry">
+                    <div class="word">ninja</div>
+                    <div class="partOfSpeech">noun</div>
+                    <div class="plural">Plural: <span class="pluralItalics">ninjas</span></div>
+                    <button class="likes" onclick="likeMessage()">13 Likes</button>
+                </div>
+                <div class="definition">
+                    <p>A practitioner skilled in the <a href="https://en.wikipedia.org/wiki/Japanese_people" target="_blank">Japanese</a> art of <a href="https://en.wikipedia.org/wiki/Ninjutsu" target="_blank">ninjutsu</a></p>
+                </div>
+            </div>
+            <div class="entryContainer">
+                <div class="entry">
+                    <div class="word">ninja</div>
+                    <div class="partOfSpeech">noun</div>
+                    <div class="plural">Plural: <span class="pluralItalics">ninjas</span></div>
+                    <button class="likes" onclick= "likeMessage()">37 Likes</button>
+                </div>
+                <div class="definition">
+                    <p>A <a href="https://en.wikipedia.org/wiki/Programmer" target="_blank">programmer</a> who breaks down problems with <a href="https://en.wikipedia.org/wiki/Zen" target="_blank">Zen</a>-like focus</p>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="userDefinition">
+                <p class="sidebarContent sidebarFont">Dojonary is defined by <span class="sidebarBold">YOU</span></p>
+                <button class="addDefintion" onclick="disappear(this)">Add Definition</button>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <script src="script.js"></script>
 </body>

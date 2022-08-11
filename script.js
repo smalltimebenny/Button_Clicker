@@ -6,3 +6,11 @@ function change (element) {
         element.innerText = "Login"
     }
 }
+
+function disappear (element) {
+    element.remove()
+}
+
+function likeMessage (){
+    alert ('Ninja was liked')
+}
